@@ -39,7 +39,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 @Restricted(NoExternalUse.class)
 public class SimpleGlobalBuildDiscarderStrategy extends GlobalBuildDiscarderStrategy {
 
-    private BuildDiscarder discarder;
+    private final BuildDiscarder discarder;
 
     @DataBoundConstructor
     public SimpleGlobalBuildDiscarderStrategy(BuildDiscarder discarder) {
